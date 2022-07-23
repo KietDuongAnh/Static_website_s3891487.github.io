@@ -1,0 +1,363 @@
+* { 
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 7%;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: #004080;
+    position: relative;
+}
+
+footer {
+    background-color: #004080;
+}
+
+
+header .logo {
+    padding: 10px 10px;
+    width: 200px;
+    height: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color:aliceblue
+}
+
+a p:hover {
+    color:aliceblue;
+}
+
+h2 {
+    text-align: center;
+    background-color: #66b3ff;
+}
+
+header ul li a:hover, footer ul li a:hover {
+    border-radius: 30px;
+    color: black;
+    background-color: azure;
+}
+
+footer ul li a {
+    color: white;
+}
+
+.book_container {
+    background-color: lightblue;
+}
+
+
+.book_price_container button {
+    background-color: #008CBA;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.book_price_container button:hover {
+    color: aliceblue;
+    background-color: #5d635e;
+}
+
+.book_infor_container {
+    text-align: justify;
+}
+
+.book_price_container button {
+    background-color: #008CBA;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.book_price_container button:hover {
+    color: aliceblue;
+    background-color: #5d635e;
+}
+
+
+@media screen and (min-width: 961px) {
+    header ul {
+        background-color: #66b3ff;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding-bottom: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    
+    header ul li {
+        margin-top: 10%;
+        display: inline-block;
+    }
+    
+    header ul li a {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    footer {
+        position: fixed;
+        left:0;
+        bottom: 0;
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    footer ul {
+        margin-left: 60%;
+        display: inline-block;
+    }
+    
+    footer ul li {
+        display: inline-block;
+    }
+    
+    footer ul li a {
+        padding: 10px 20px 10px 20px;
+    }
+    
+    main {
+        margin: 20px 100px auto;
+        text-align: center;
+    }
+    
+    .category, .sub_category {
+        margin-top: 3%;
+    }
+
+    .book_container {
+        display: flex;
+    }
+    
+    .book_container img {
+        width: 13vw;
+        height: 40vh;
+    }
+    
+    .book {
+        margin: 20px auto;
+    }
+    
+    .book_img_container {
+        display: flex;
+    }
+    
+    .main_img_container {
+        flex: 70%;
+    }
+
+    .sub_img_container {
+        margin-top: 3%;
+    }
+
+    
+    .book_price_container {
+        flex: 50%;
+    }
+    
+    .main_img {
+        width: 30vw;
+        height: 80vh;
+        margin-top: 13%;
+    }
+
+    .sub_img {
+        width: 30vw;
+        height: 25vh;
+        margin-top: 3%;
+    }
+
+    .book_infor_container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .book_price_container {
+        margin: auto;
+    }
+    
+    .book_price_container p {
+        font-size: xx-large;
+    }
+    
+    .book_price_container button {
+        background-color: #008CBA;
+        border-radius: 30px;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 20%;
+    }
+    
+    .book_price_container button:hover {
+        color: aliceblue;
+        background-color: #5d635e;
+    }
+    
+    .contact_form {
+        line-height: 30px;
+        margin: 30px 200px 30px 500px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    
+    header {
+        position: fixed;
+        top:0;
+        height: 100%;
+        width: 30%;
+    }
+
+    header .logo {
+        margin: 0;
+        height: 20%;
+        width: 100%;
+    }
+
+    header ul {
+        padding:0%;
+        margin: 20% 5% auto;
+        border-radius: 30px;
+        border: solid aliceblue;
+        background-color: #008CBA;
+
+    }
+
+    header ul li a {
+        color: aliceblue;
+        display: block;
+        padding: 10%
+    }
+
+    main {
+        margin: 0% 30% 15%;
+        width: 70%;
+    }
+
+    footer {
+        position: fixed;
+        left:0;
+        bottom: 0;
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    footer ul {
+        margin-left: 40%;
+        display: inline-block;
+    }
+    
+    footer ul li {
+        display: inline-block;
+    }
+    
+    footer ul li a {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+   
+    
+    .category, .sub_category {
+        margin-top: 5%;
+    }
+
+    .book_container {
+        display: flex;
+    }
+    
+    .book_container img {
+        width: 13vw;
+        height: 20vh;
+    }
+    
+    .book {
+        margin: 20px auto;
+    }
+    
+    /* Edit book detail page */
+    
+    .main_img_container img {
+        width: 50%;
+        margin: 10% 25%;
+    }
+
+    .sub_img_container {
+        display: flex;
+    }
+
+    .sub_img {
+        margin-left: 1%;
+        width: 25vw;
+        height: 10vh;
+    }
+
+    .book_infor_container {
+        margin: 10% 10% 20%;
+    }
+    
+    .book_price_container {
+        margin: 10% auto;
+    }
+    
+    .book_price_container p {
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    .book_price_container button {
+        background-color: #008CBA;
+        border-radius: 30px;
+        padding: 1% 5%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10% 40% auto;
+    }
+    
+
+    /* Edit contact page */
+    .contact_form {
+        line-height: 30px;
+        margin: 2vh 3vw;
+        text-align: left;
+    }
+
+    input, label {
+        display: block;
+    }
+
+}
+
